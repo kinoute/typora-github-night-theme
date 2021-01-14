@@ -1,6 +1,6 @@
 /*
-Theme Name: Github Dark
-Theme URI: https://github.com/kinoute/typora-github-dark-theme
+Theme Name: Github Night
+Theme URI: https://github.com/kinoute/typora-github-night-theme
 Authors: Yann Defretin, Github Team
 Author URI: https://github.com/kinoute
 Description: A Typora theme that uses Github Dark Color Scheme.
@@ -12,28 +12,28 @@ Tags: dark, github, typora
   font-family: Nunito;
   font-style: normal;
   font-weight: 400;
-  src: local("Nunito Sans Regular"),url(./github-dark/NunitoSans-Regular.woff) format("woff");
+  src: local("Nunito Sans Regular"),url(./github-night/NunitoSans-Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: Nunito;
   font-style: italic;
   font-weight: 400;
-  src: local("Nunito Sans It"),url(./github-dark/NunitoSans-Italic.woff) format("woff");
+  src: local("Nunito Sans It"),url(./github-night/NunitoSans-Italic.woff) format("woff");
 }
 
 @font-face {
   font-family: Nunito;
   font-style: normal;
   font-weight: 700;
-  src: local("Nunito Sans Bold"),url(./github-dark/NunitoSans-ExtraBold.woff) format("woff");
+  src: local("Nunito Sans Bold"),url(./github-night/NunitoSans-ExtraBold.woff) format("woff");
 }
 
 @font-face {
   font-family: Nunito;
   font-style: italic;
   font-weight: 700;
-  src: local("Nunito Sans Bold Italic"),url(./github-dark/NunitoSans-ExtraBoldItalic.woff) format("woff");
+  src: local("Nunito Sans Bold Italic"),url(./github-night/NunitoSans-ExtraBoldItalic.woff) format("woff");
 }
 
 :root {
