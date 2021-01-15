@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-github-night-theme
 Authors: Yann Defretin, Github Team
 Author URI: https://github.com/kinoute
 Description: A Typora theme that uses Github Dark Color Scheme.
-Version: 0.1
+Version: 0.1.1
 Tags: dark, github, typora
 */
 
@@ -58,7 +58,7 @@ Tags: dark, github, typora
   --active-toggle-btn-color: #192133;
   --blur-text-color: rgba(200, 200, 200, 0.33);
   --rawblock-edit-panel-bd: #161b22 !important;
-/*  --select-text-bg-color: #192133;*/
+  --select-text-bg-color: #355274;
   /* Mermaid diagrams*/
   --mermaid-node-color: #b87f62 !important;
   --mermaid-node-border: #bd7958;
@@ -77,6 +77,8 @@ Tags: dark, github, typora
 
 .dropdown-menu>li>a:hover {
     background-color: #161b22;
+    border-left: 1px solid #0d1117;
+    border-right: 1px solid #0d1117;
 }
 
 body {
@@ -1228,7 +1230,7 @@ mark {
 
 
 .cm-s-typora-default .CodeMirror-activeline-background {
-  background: #FC4349;
+  background: #484f58;
 }
 
 .cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
