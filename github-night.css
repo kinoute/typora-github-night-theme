@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-github-night-theme
 Authors: Yann Defretin, Github Team
 Author URI: https://github.com/kinoute
 Description: A Typora theme that uses Github Dark Color Scheme.
-Version: 0.1.1
+Version: 0.2
 Tags: dark, github, typora
 */
 
@@ -63,6 +63,8 @@ Tags: dark, github, typora
   --mermaid-node-color: #b87f62 !important;
   --mermaid-node-border: #bd7958;
   --mermaid-contrast-color: #afe61d;
+  --mermaid-theme: dark;
+
 }
 
 .pane-group {
@@ -433,6 +435,7 @@ code {
     border-radius: 6px;
     font-family: "Nunito";
     line-height: 2;
+    white-space: nowrap;
 }
 
 .md-fences {
@@ -461,7 +464,7 @@ code {
 }*/
 
 #write pre.md-meta-block {
-  background-color: #1a283d;
+  background-color: #161b22;
   border: 0;
   border-radius: 3px;
   color: #fff;
@@ -557,7 +560,7 @@ code {
   vertical-align: middle;
   text-align: center;
   border: 1px solid #324560;
-  background-color: #192133!important;
+  background-color: #161b22 !important;
   margin-left: 0;
   margin-top: -.5rem;
 }
@@ -566,8 +569,8 @@ code {
   content: "\2713";
   font-size: 1.2125rem;
   line-height: .9375rem;
-  margin-top: -1rem;
-}
+/*  margin-top: -1rem;
+*/}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
   .task-list-item input:before, .task-list-item input:checked:before, .task-list-item input[checked]:before {
@@ -925,7 +928,7 @@ input {
 }
 
 .cm-s-inner .cm-header {
-  color: #005cc5;
+  color: #d2a8ff;
 }
 
 .cm-s-inner.CodeMirror, .cm-s-inner .CodeMirror-gutters {
@@ -1069,8 +1072,13 @@ input {
   list-style-type: circle;
   background-color: transparent;
   font-weight: 700;
+  font-size: 1em;
 }
 
+#write ul>li ul>li ul>li {
+  list-style-type: square;
+  font-size: 1em;
+}
 
 #write ol>li>*, #write ul>li>* {
 /*  color: #fff;
@@ -1099,9 +1107,18 @@ ul:last-child, ol:last-child {
 }
 
 sup.md-footnote {
-  background-color: #FC4349;
-  color: white;
+  background-color: rgba(56,139,253,0.1);
+  color: #58a6ff;
   font-weight: 700;
+  font-size: 75%;
+}
+
+sup.md-footnote:hover {
+  background-color: rgba(56,139,253,0.15);
+}
+
+sup.md-footnote .md-meta {
+  color: #58a6ff;
 }
 
 .md-def-footnote .md-def-name:before, .md-def-footnote .md-def-name:after {
@@ -1112,11 +1129,10 @@ sup.md-footnote {
   padding: 2px;
   padding-left: 4px;
   padding-right: 4px;
-  background-color: #FC4349;
-  color: white;
+  background-color: rgba(56,139,253,0.1);
+  color: #58a6ff;
   border-radius: 4px;
   cursor: pointer;
-
 }
 
 .footnotes {
@@ -1134,11 +1150,12 @@ a.reversefootnote {
 }
 
 mark {
-  background-color: #ff8e30;
-  border-radius: 4px;
-  color: #000;
+  background-color: #2ea44f;
+  border-radius: 6px;
+  color: white;
   line-height: 2;
-  padding: 5px 7px 2px 7px;
+  padding: 5px 10px;
+  white-space: nowrap;
 }
 
 .cm-s-typora-default {
@@ -1379,7 +1396,7 @@ mark {
 }
 
 .taskText {
-    fill: #333 !important;
+    fill: white !important;
 }
 
 /* Class diagram specific */
@@ -1548,7 +1565,8 @@ select[disabled]:hover {
 /* radio */
 
 input[type="radio"] {
-  background-color: #21262d !important;
+  background-color: #161b22 !important;
+  border: 0px !important;
 }
 
 input[type="radio"]:before {
@@ -1560,8 +1578,8 @@ input[type="radio"]:before {
   text-align: center;
   border: 1px solid #30363d;
   border-radius: 0.55rem;
-  background-color: #21262d !important;
-  margin-top: -0.4rem;
+  background-color: #161b22 !important;
+  margin-top: -0.8rem;
   margin-left: -0.1rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -1580,7 +1598,7 @@ input[type="radio"]:checked:before {
   font-size: 1rem;
   line-height: 1rem;
   color: var(--text-color);
-  background-color: #21262d !important;
+  background-color: #161b22 !important;
 }
 
 
@@ -1591,7 +1609,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 input {
-  background-color: #21262d !important;
+  background-color: #161b22 !important;
   border: 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -1610,8 +1628,8 @@ input[type="checkbox"]:before {
   text-align: center;
   border: 1px solid #30363d;
   border-radius: 3px;
-  background-color: #21262d ;
-  margin-top: -0.5rem;
+  background-color: #161b22;
+  margin-top: -0.8rem;
   margin-left: -0.1rem;
 }
 
@@ -1629,6 +1647,8 @@ input[type="checkbox"]:checked:before {
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: var(--text-color);
+  margin-top: -0.8rem;
+  margin-left: -0.1rem;
 }
 
 /* checkbox checked hover*/
@@ -1636,14 +1656,16 @@ input[type="checkbox"]:checked:hover:before {
   content: "\2713";
   font-size: 0.9rem;
   line-height: 1.2rem;
-  color: white;
+  color: white;`
+  margin-top: -0.8rem;
+  margin-left: -0.1rem;
 }
 
 /* input number in settings for Win/Linux */
 input:not([type="range"]):not([type="color"]) {
   border: 1px solid #30363d !important;
   border-radius: 3px;
-  background-color: #21262d ;
+  background-color: #161b22;
 }
 
 .pane-sm input[type="search"] {
