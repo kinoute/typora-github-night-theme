@@ -324,7 +324,7 @@ table th, table td {
   padding: 8px;
   line-height: 1.25rem;
   vertical-align: middle;
-  border-top: 1px solid #30363d;
+  border-top: 1px solid #3D454D;
 }
 
 table th {
@@ -342,12 +342,12 @@ table caption+thead tr:first-child th, table caption+thead tr:first-child td, ta
 }
 
 table tbody+tbody {
-  border-top: 2px solid #324560;
+  border-top: 2px solid #3D454D;
 }
 
 table tr th {
   border: 1px solid #324560;
-  border-bottom: solid 2px #324560;
+  border-bottom: solid 2px #3D454D;
   border-bottom: 0;
   font-weight: 700;
   margin: 0;
@@ -356,7 +356,7 @@ table tr th {
 
 table tr td {
   background: #192534;
-  border: 1px solid #324560;
+  border: 1px solid #3D454D;
   margin: 0;
   padding: 10px 16px;
 }
@@ -375,7 +375,7 @@ table {
 }
 
 table tr {
-  border-top: 1px solid #324560;
+  border-top: 1px solid #3D454D;
   margin: 0;
   padding: 0;
 }
@@ -386,7 +386,7 @@ thead {
 }
 
 table tr th {
-  border: 1px solid #324560;
+  border: 1px solid #3D454D;
   border-bottom: solid 2px #ccc;
   border-bottom: 0;
   font-weight: 700;
@@ -396,7 +396,7 @@ table tr th {
 
 table tr td {
   background: #192534;
-  border: 1px solid #324560;
+  border: 1px solid #3D454D;
   margin: 0;
   padding: 10px 16px;
   line-height: 1.6em;
