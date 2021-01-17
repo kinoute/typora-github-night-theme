@@ -74,17 +74,19 @@ Tags: dark, github, typora
 .dropdown-menu {
   background-color: #0d1117 !important;
   border: 1px solid #161b22 !important;
-  color: #c9d1d9 !important;
+  color: #8b949e !important;
 }
 
 .dropdown-menu>li>a {
   border-left: 1px solid #0d1117;
   border-right: 1px solid #0d1117;
+  color: #c9d1d9 !important;
 }
 .dropdown-menu>li>a:hover {
     background-color: #161b22;
     border-left: 1px solid #0d1117;
     border-right: 1px solid #0d1117;
+    color: #c9d1d9 !important;
 }
 
 body {
