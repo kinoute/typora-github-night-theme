@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-github-night-theme
 Authors: Yann Defretin, Github Team
 Author URI: https://github.com/kinoute
 Description: A Typora theme that uses Github Dark Color Scheme.
-Version: 0.2
+Version: 0.2.1
 Tags: dark, github, typora
 */
 
@@ -73,10 +73,14 @@ Tags: dark, github, typora
 
 .dropdown-menu {
   background-color: #0d1117 !important;
-  border-color: #161b22 !important;
+  border: 1px solid #161b22 !important;
   color: #c9d1d9 !important;
 }
 
+.dropdown-menu>li>a {
+  border-left: 1px solid #0d1117;
+  border-right: 1px solid #0d1117;
+}
 .dropdown-menu>li>a:hover {
     background-color: #161b22;
     border-left: 1px solid #0d1117;
@@ -701,11 +705,12 @@ p.mathjax-block, .mathjax-block {
 }
 
 #typora-source {
-  color: #555;
+  color: #c9d1d9;
 }
 
 .typora-sourceview-on #toggle-sourceview-btn {
-  color: #555;
+  color: #c9d1d9;
+  background-color: #484f58;
 }
 
 .md-image-pick-file-btn, .md-image-input-src-btn {
@@ -942,6 +947,10 @@ input {
   width: 5ch;
 }
 
+#typora-source .CodeMirror-gutter-wrapper {
+  font-size: 1rem;
+}
+
 .cm-s-inner .CodeMirror-cursor {
   border-left: solid thin #f8f8f2!important;
 }
@@ -1160,7 +1169,7 @@ mark {
 
 .cm-s-typora-default {
   font-family: "Nunito",sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   color: #c9d1d9;
 }
 
@@ -1579,7 +1588,7 @@ input[type="radio"]:before {
   border: 1px solid #30363d;
   border-radius: 0.55rem;
   background-color: #161b22 !important;
-  margin-top: -0.8rem;
+  margin-top: -0.5rem;
   margin-left: -0.1rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -1629,7 +1638,7 @@ input[type="checkbox"]:before {
   border: 1px solid #30363d;
   border-radius: 3px;
   background-color: #161b22;
-  margin-top: -0.8rem;
+  margin-top: -0.5rem;
   margin-left: -0.1rem;
 }
 
@@ -1647,8 +1656,12 @@ input[type="checkbox"]:checked:before {
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: var(--text-color);
-  margin-top: -0.8rem;
+  margin-top: -0.5rem;
   margin-left: -0.1rem;
+}
+
+#write input[type="checkbox"]:before, #write input[type="checkbox"]:checked:before {
+  margin-top: -0.9rem;
 }
 
 /* checkbox checked hover*/
@@ -1656,8 +1669,8 @@ input[type="checkbox"]:checked:hover:before {
   content: "\2713";
   font-size: 0.9rem;
   line-height: 1.2rem;
-  color: white;`
-  margin-top: -0.8rem;
+  color: white;
+  margin-top: -0.5rem;
   margin-left: -0.1rem;
 }
 
@@ -1687,5 +1700,10 @@ input:not([type="range"]):not([type="color"]) {
 /* Remove dashed border on filenames in the sidebar */
 .file-library-node:not(.file-node-root):focus>.file-node-content {
     outline: 0 !important;
+}
+
+/* Handle long filenames in sidebar */
+file-node-title-name-part {
+  white-space: pre-wrap;
 }
 
