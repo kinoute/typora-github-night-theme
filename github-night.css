@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-github-night-theme
 Authors: Yann Defretin, Github Team
 Author URI: https://github.com/kinoute
 Description: A Typora theme that uses Github Dark Color Scheme.
-Version: 0.2.1
+Version: 0.2.3
 Tags: dark, github, typora
 */
 
@@ -455,6 +455,11 @@ code {
 .md-task-list-item>input {
   background: #1a283d;
   margin-left: -1.3em;
+}
+
+/* Using checkboxes in sublists should not get list circles inside inputs */
+.md-task-list-item {
+  list-style-type: none !important;
 }
 
 /*@media print {
