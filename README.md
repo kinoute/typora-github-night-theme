@@ -58,5 +58,5 @@ I made other themes for different applications. Here there are:
 
 * Created by [Yann Defretin](https://github.com/kinoute).
 * Based on the official GitHub Dark Theme available on their website.
-* The Font used is [Nunito](https://fonts.google.com/specimen/Nunito) designed by Vernon Adams.
-
+* The main font used is [Nunito](https://fonts.google.com/specimen/Nunito) designed by Vernon Adams.
+* The font used for Code Blocks is [San Francisco Mono](https://developer.apple.com/fonts/) by Apple.
