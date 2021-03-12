@@ -1,9 +1,9 @@
 /*
-Theme Name: Github Night
+Theme Name: GitHub Night
 Theme URI: https://github.com/kinoute/typora-github-night-theme
-Authors: Yann Defretin, Github Team
+Authors: Yann Defretin, GitHub Team
 Author URI: https://github.com/kinoute
-Description: A Typora theme that uses Github Dark Color Scheme.
+Description: A Typora theme that uses GitHub Dark Color Scheme.
 Version: 0.3.0
 Tags: dark, github, typora
 */
@@ -88,7 +88,7 @@ Tags: dark, github, typora
     /* Legacy iOS */
 }
 
-/* Use a special font for code blocks just like Github */
+/* Use a special font for code blocks just like GitHub */
 @font-face {
     font-family: 'SFMono-Regular';
     font-style: normal;
