@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-github-night-theme
 Authors: Yann Defretin, GitHub Team
 Author URI: https://github.com/kinoute
 Description: A Typora theme that uses GitHub Dark Color Scheme.
-Version: 0.3.1
+Version: 0.4.0
 Tags: dark, github, typora
 */
 
@@ -608,6 +608,10 @@ code {
 }
 */
 
+.CodeMirror-line {
+    padding-left: 15px;
+}
+
 .code-tooltip {
     background: #161b22;
     border: 1px solid #161b22;
@@ -657,7 +661,7 @@ code {
 }
 
 .task-list-item input {
-    top: 3px;
+    top: 7px;
 }
 
 .task-list-item input:before {
@@ -1076,7 +1080,8 @@ input {
 .cm-s-inner .CodeMirror-gutters {
     border: 0;
     color: #6d8a88;
-    width: 5ch;
+    /*    width: 5ch;
+*/
 }
 
 #typora-source .CodeMirror-gutter-wrapper {
@@ -1089,7 +1094,7 @@ input {
 
 .cm-s-inner .CodeMirror-linenumber {
     color: #6d8a88;
-    width: 4ch !important;
+    /*    width: 4ch !important;*/
 }
 
 .cm-s-inner .CodeMirror-line::selection,
@@ -1864,10 +1869,16 @@ input:not([type="range"]):not([type="color"]) {
 }
 
 /* scrollbar */
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 1px;
     padding-right: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #FFF;
+}*/
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:active {
+    border-radius: 10px;
+    background-color: #2F333A;
 }
 
 /* Remove dashed border on filenames in the sidebar */
