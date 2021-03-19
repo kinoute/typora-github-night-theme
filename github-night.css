@@ -118,7 +118,8 @@ Tags: dark, github, typora
     --active-toggle-btn-color: #192133;
     --blur-text-color: rgba(200, 200, 200, 0.33);
     --rawblock-edit-panel-bd: #161b22 !important;
-    --select-text-bg-color: #355274;
+    --select-text-bg-color: rgba(53, 82, 116, 0.97) !important;
+    --select-text-font-color: #fff !important;
     /* Mermaid diagrams*/
     --mermaid-node-color: #b87f62 !important;
     --mermaid-node-border: #bd7958;
@@ -1205,9 +1206,12 @@ input {
 }
 
 .cm-s-inner .CodeMirror-selected,
-.cm-s-inner .CodeMirror-selectedtext {
-    background: #3b4254 !important;
-    color: inherit;
+.cm-s-inner .CodeMirror-selectedtext,
+body::selection,
+body::-moz-selection {
+    background: var(--select-text-bg-color) !important;
+    background-color: var(--select-text-bg-color) !important;
+    color: var(--select-text-font-color) !important;
     text-shadow: none;
 }
 
