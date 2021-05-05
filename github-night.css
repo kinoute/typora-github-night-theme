@@ -311,6 +311,7 @@ h5 {
 
 h6 {
     font-size: 1em;
+    color: rgb(139, 148, 158);
 }
 
 h1.md-focus:before,
@@ -536,7 +537,7 @@ code {
     font-size: 1.105rem;
     background-color: rgba(240, 246, 252, 0.15);
     border-radius: 6px;
-    font-family: "SFMono-Regular", Nunito, monospace;
+    font-family: "SFMono-Regular", "Fira Code", Nunito, monospace;
     line-height: 2;
     white-space: nowrap;
 }
@@ -1901,19 +1902,19 @@ file-node-title-name-part {
 }
 
 .typora-export {
-    --monospace: "Nunito";
+    --monospace: "Fira Code";
 }
 
 .typora-export pre.md-fences {
-    font-size: 1.25rem !important;
+    font-size: 1.15rem !important;
 }
 
 .typora-export code {
-    font-size: 1.2rem !important;
+    font-size: 1.15rem !important;
 }
 
 .typora-export strong {
     font-weight: 700 !important;
 }
 
-@include-when-export url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+@include-when-export url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap);
