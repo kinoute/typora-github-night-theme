@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-github-night-theme
 Authors: Yann Defretin, GitHub Team
 Author URI: https://github.com/kinoute
 Description: A Typora theme that uses GitHub Dark Color Scheme.
-Version: 0.4.1
+Version: 0.4.2
 Tags: dark, github, typora
 */
 
@@ -325,7 +325,6 @@ h6.md-focus:before {
 
 p {
     color: #c9d1d9;
-    font-size: 1rem;
     line-height: 1.20rem;
     margin: 0 0 1.25rem;
 }
@@ -333,7 +332,7 @@ p {
 kbd {
     display: inline-block;
     padding: 3px 5px;
-    font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font: 11px SFMono-Regular, Nunito, Consolas, Liberation Mono, Menlo, monospace;
     line-height: 10px;
     color: #b1bac4;
     vertical-align: middle;
@@ -534,10 +533,10 @@ tt {
 code {
     padding: .2em .4em;
     margin: 0;
-    font-size: 85%;
+    font-size: 1.105rem;
     background-color: rgba(240, 246, 252, 0.15);
     border-radius: 6px;
-    font-family: "SFMono-Regular";
+    font-family: "SFMono-Regular", Nunito, monospace;
     line-height: 2;
     white-space: nowrap;
 }
@@ -1894,3 +1893,27 @@ input:not([type="range"]):not([type="color"]) {
 file-node-title-name-part {
     white-space: pre-wrap;
 }
+
+/* Exports */
+.typora-export li {
+    font-size: 1.25rem !important;
+    padding-bottom: 10px !important;
+}
+
+.typora-export {
+    --monospace: "Nunito";
+}
+
+.typora-export pre.md-fences {
+    font-size: 1.25rem !important;
+}
+
+.typora-export code {
+    font-size: 1.15rem !important;
+}
+
+.typora-export strong {
+    font-weight: 700 !important;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap);
