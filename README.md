@@ -52,6 +52,7 @@ I made other themes for different applications. Here there are:
 
 - Sublime Text theme: https://github.com/kinoute/hivacruz-sublime-theme
 - VSCode Theme: https://github.com/kinoute/vscode-hivacruz-theme
+- Vim Theme: https://github.com/kinoute/vim-hivacruz-theme
 - iTerm2: https://github.com/kinoute/hivacruz-itermcolors
 - Nova: https://github.com/kinoute/hivacruz-nova-theme
 ## Credits
