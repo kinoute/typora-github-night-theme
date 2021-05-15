@@ -1280,6 +1280,10 @@ sup.md-footnote {
     font-style: normal;
 }
 
+sup.md-footnote a {
+    font-style: normal;
+}
+
 sup.md-footnote:hover {
     background-color: rgba(56, 139, 253, 0.15);
 }
@@ -2008,6 +2012,14 @@ div.cm-s-inner[lang="scss"] .cm-tag {
     color: #d2a8ff !important;
 }
 
+div.cm-s-inner[lang="scss"] .cm-error {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="ruby"] .cm-atom {
+    color: #d2a8ff !important;
+}
+
 /* Exports */
 .typora-export li {
     font-size: 1.25rem !important;
@@ -2028,6 +2040,20 @@ div.cm-s-inner[lang="scss"] .cm-tag {
 
 .typora-export strong {
     font-weight: 700 !important;
+}
+
+
+.typora-export #write a {
+    color: #58a6ff;
+}
+
+.typora-export .footnote-line {
+    color: #c9d1d9;
+    font-size: 15px !important;
+}
+
+.typora-export .footnote-line a {
+    color: #58a6ff;
 }
 
 @include-when-export url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap);
