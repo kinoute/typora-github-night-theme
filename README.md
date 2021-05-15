@@ -55,6 +55,7 @@ I made other themes for different applications. Here there are:
 - Vim Theme: https://github.com/kinoute/vim-hivacruz-theme
 - iTerm2: https://github.com/kinoute/hivacruz-itermcolors
 - Nova: https://github.com/kinoute/hivacruz-nova-theme
+
 ## Credits
 
 * Created by [Yann Defretin](https://github.com/kinoute).

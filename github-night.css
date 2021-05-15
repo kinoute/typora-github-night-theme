@@ -4,7 +4,7 @@ Theme URI: https://github.com/kinoute/typora-github-night-theme
 Authors: Yann Defretin, GitHub Team
 Author URI: https://github.com/kinoute
 Description: A Typora theme that uses GitHub Dark Color Scheme.
-Version: 0.4.2
+Version: 0.5.0
 Tags: dark, github, typora
 */
 
@@ -1218,6 +1218,7 @@ body::-moz-selection {
 #write ol,
 #write ul {
     padding-left: 2rem;
+    font-size: 1.15rem;
     /*  margin: .5rem 0;*/
 }
 
@@ -1276,6 +1277,7 @@ sup.md-footnote {
     color: #58a6ff;
     font-weight: 700;
     font-size: 75%;
+    font-style: normal;
 }
 
 sup.md-footnote:hover {
@@ -1893,6 +1895,117 @@ input:not([type="range"]):not([type="color"]) {
 /* Handle long filenames in sidebar */
 file-node-title-name-part {
     white-space: pre-wrap;
+}
+
+/* Custom syntax highlighting */
+div.cm-s-inner[lang="css"] .cm-qualifier {
+    color: #a5d6ff !important;
+}
+
+div.cm-s-inner[lang="css"] .cm-def {
+    color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="css"] .cm-tag {
+    color: #7ee787 !important;
+}
+
+div.cm-s-inner[lang="diff"] .cm-meta {
+    color: #d2a8ff !important;
+    font-weight: 700;
+}
+
+div.cm-s-inner[lang="diff"] .cm-negative {
+    color: #d2a8ff !important;
+    font-weight: 700;
+}
+
+div.cm-s-inner[lang="dockerfile"] .cm-variable-2 {
+    color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="elixir"] .cm-def {
+    color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="elixir"] .cm-atom {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="erlang"] .cm-tag {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="fsharp"] .cm-variable {
+    color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="go"] .cm-atom {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="http"] .cm-atom {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="java"] .cm-def {
+    color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="javascript"] .cm-def {
+    color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="less"] .cm-def {
+    color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="kotlin"] .cm-def {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="markdown"] .cm-comment.cm-variable-2 {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="perl"] .cm-def {
+    color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="perl"] .cm-meta {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="perl"] .cm-variable-2 {
+    color: #8b949e !important;
+}
+
+div.cm-s-inner[lang="php"] .cm-def {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="python"] .cm-property {
+    color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="rust"] .cm-def {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="rust"] .cm-variable-3 {
+    color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="scss"] .cm-def {
+    color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="scss"] .cm-variable-2 {
+    color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="scss"] .cm-tag {
+    color: #d2a8ff !important;
 }
 
 /* Exports */
