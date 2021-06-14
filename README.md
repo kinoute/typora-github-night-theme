@@ -24,7 +24,7 @@ For that matter, Issues and Pull Requests are very welcome!
 
 ![](images/articles.png)
 
-###  Source Mode
+### Source Mode
 
 ![](images/sourcemode.png)
 
