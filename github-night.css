@@ -573,6 +573,10 @@ code {
   }
 }*/
 
+.file-tree-node {
+     padding-top: 2px;
+ }
+
 #write pre.md-meta-block {
     background-color: var(--item-hover-bg-color);
     border: 0;
