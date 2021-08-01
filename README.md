@@ -9,7 +9,7 @@ Three dark themes for [Typora](https://typora.io), a multi-platform Markdown Edi
 1. Download the zipped project package or the [latest stable release](https://github.com/kinoute/typora-github-night-theme/releases).
 2. Launch Typora and open `Preferences` from the app menu.
 3. Go to the `Appearance` tab, and choose `Open Theme Folder`.
-4. Copy all the `github-night-*.css` files and the `github-night` folder to your Typora theme library.
+4. Copy all the `github-night*.css` files and the `github-night` folder to your Typora theme library.
 5. Launch or restart Typora and choose one of the `GitHub Night` themes from the theme menu.
 
 ## Status
