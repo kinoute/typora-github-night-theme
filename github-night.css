@@ -3,8 +3,8 @@ Theme Name: GitHub Night
 Theme URI: https://github.com/kinoute/typora-github-night-theme
 Authors: Yann Defretin, GitHub Team
 Author URI: https://github.com/kinoute
-Description: A Typora theme that uses GitHub Dark Color Scheme.
-Version: 0.5.0
+Description: Typora themes that reproduces GitHub Dark Color Schemes.
+Version: 0.6.0
 Tags: dark, github, typora
 */
 
@@ -117,9 +117,10 @@ Tags: dark, github, typora
     --heading-char-color: #f9826c;
     --active-toggle-btn-color: #192133;
     --blur-text-color: rgba(200, 200, 200, 0.33);
-    --rawblock-edit-panel-bd: #161b22 !important;
+    --rawblock-edit-panel-bd: var(--item-hover-bg-color) !important;
     --select-text-bg-color: rgba(53, 82, 116, 0.97) !important;
     --select-text-font-color: #fff !important;
+    --color-border-secondary: #21262d !important;
     /* Mermaid diagrams*/
     --mermaid-node-color: #b87f62 !important;
     --mermaid-node-border: #bd7958;
@@ -133,22 +134,22 @@ Tags: dark, github, typora
 }
 
 .dropdown-menu {
-    background-color: #0d1117 !important;
-    border: 1px solid #161b22 !important;
+    background-color: var(--bg-color) !important;
+    border: 1px solid var(--item-hover-bg-color) !important;
     color: #8b949e !important;
 }
 
 .dropdown-menu>li>a {
-    border-left: 1px solid #0d1117;
-    border-right: 1px solid #0d1117;
-    color: #c9d1d9 !important;
+    border-left: 1px solid var(--bg-color);
+    border-right: 1px solid var(--bg-color);
+    color: var(--text-color) !important;
 }
 
 .dropdown-menu>li>a:hover {
-    background-color: #161b22;
-    border-left: 1px solid #0d1117;
-    border-right: 1px solid #0d1117;
-    color: #c9d1d9 !important;
+    background-color: var(--item-hover-bg-color);
+    border-left: 1px solid var(--bg-color);
+    border-right: 1px solid var(--bg-color);
+    color: var(--text-color) !important;
 }
 
 body {
@@ -158,7 +159,7 @@ body {
 }
 
 #write {
-    background-color: #0d1117 !important;
+    background-color: var(--bg-color) !important;
     font-family: "Nunito", sans-serif;
     max-width: 860px;
     margin: 0 auto;
@@ -184,7 +185,7 @@ body {
 }
 
 content {
-    background-color: #0d1117 !important;
+    background-color: var(--bg-color) !important;
 }
 
 /*.md-end-block.md-heading.md-focus {
@@ -197,7 +198,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #c9d1d9;
+    color: var(--text-color);
     font-family: "Nunito", sans-serif;
     font-weight: 400;
     padding-top: 20px;
@@ -269,14 +270,14 @@ h1 {
     font-size: 2.25em;
     line-height: 1.2;
     padding-bottom: .3em;
-    border-bottom: 1px solid #21262d;
+    border-bottom: 1px solid var(--color-border-secondary);
 }
 
 h2 {
     font-size: 1.75em;
     line-height: 1.225;
     padding-bottom: .3em;
-    border-bottom: 1px solid #21262d;
+    border-bottom: 1px solid var(--color-border-secondary);
 }
 
 /*@media print {
@@ -325,7 +326,7 @@ h6.md-focus:before {
 }
 
 p {
-    color: #c9d1d9;
+    color: var(--text-color);
     line-height: 1.20rem;
     margin: 0 0 1.25rem;
 }
@@ -337,7 +338,7 @@ kbd {
     line-height: 10px;
     color: #b1bac4;
     vertical-align: middle;
-    background-color: #0d1117;
+    background-color: var(--bg-color);
     border-bottom-color: #6e7681;
     border: 1px solid #6e7681;
     border-radius: 6px;
@@ -382,7 +383,7 @@ a:hover {
 }
 
 .md-toc-content {
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
     border-radius: 6px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -393,19 +394,19 @@ a:hover {
 }*/
 
 #write div.md-toc-tooltip {
-    background-color: #161b22 !important;
-    border: 1px solid #161b22;
+    background-color: var(--item-hover-bg-color) !important;
+    border: 1px solid var(--item-hover-bg-color);
     padding-left: 5px;
     font-size: 1.4rem;
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 .md-toc:focus .md-toc-content {
-    border: 1px solid #161b22;
+    border: 1px solid var(--item-hover-bg-color);
 }
 
 .md-delete-toc {
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 table {
@@ -482,8 +483,8 @@ table tr {
 }
 
 thead {
-    background-color: #0d1117;
-    color: #c9d1d9;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 table tr th {
@@ -515,18 +516,18 @@ table tr td:last-child {
 
 table tr:nth-child(2n),
 table tr:nth-child(1n) td {
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
 }
 
 table tr:nth-child(2n),
 table tr:nth-child(2n) td {
-    background-color: #0d1117;
+    background-color: var(--bg-color);
 }
 
 .md-fences,
 tt {
     border-radius: 3px;
-    color: #161b22;
+    color: var(--item-hover-bg-color);
     font-size: .9em;
     padding: 0;
 }
@@ -547,7 +548,7 @@ code {
     margin-top: 15px;
     padding-bottom: 6px;
     padding-top: 8px;
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 .md-task-list-item>input {
@@ -573,7 +574,7 @@ code {
 }*/
 
 #write pre.md-meta-block {
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
     border: 0;
     border-radius: 3px;
     color: #fff;
@@ -614,8 +615,8 @@ code {
 }
 
 .code-tooltip {
-    background: #161b22;
-    border: 1px solid #161b22;
+    background: var(--item-hover-bg-color);
+    border: 1px solid var(--item-hover-bg-color);
     box-shadow: 0 1px 1px 0 rgba(0, 28, 36, .3);
     border-radius: 6px;
     /*margin-right: 13px!important;*/
@@ -628,9 +629,9 @@ code {
 
 /* Languages suggestions Menu */
 .auto-suggest-container {
-    background-color: #161b22;
-    border: 1px solid #161b22;
-    color: #c9d1d9;
+    background-color: var(--item-hover-bg-color);
+    border: 1px solid var(--item-hover-bg-color);
+    color: var(--text-color);
     border-radius: 6px;
 }
 
@@ -673,7 +674,7 @@ code {
     vertical-align: middle;
     text-align: center;
     border: 1px solid #324560;
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
     margin-left: 0;
     margin-top: -.5rem;
 }
@@ -727,13 +728,13 @@ blockquote p {
 }
 
 .md-rawblock-tooltip .md-rawblock-control {
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
 }
 
 /* Edit Math Blocks */
 .md-rawblock-control:not(.md-rawblock-tooltip) {
     font-size: 1.105rem;
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
 }
 
 .md-rawblock-control .CodeMirror.cm-s-inner {
@@ -821,17 +822,17 @@ p.mathjax-block,
 }
 
 #typora-source {
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 .typora-sourceview-on #toggle-sourceview-btn {
-    color: #c9d1d9;
+    color: var(--text-color);
     background-color: #484f58;
 }
 
 .md-image-pick-file-btn,
 .md-image-input-src-btn {
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
 }
 
 .md-image-btn.selected,
@@ -839,11 +840,11 @@ p.mathjax-block,
 .md-image-pick-file-btn:hover,
 .md-image-input-src-btn:hover {
     color: #f9826c !important;
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
 }
 
 .searchpanel-search-option-btn {
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
     border: 1px solid #30363d;
 }
 
@@ -879,7 +880,7 @@ p.mathjax-block,
 }
 
 #md-notification {
-    background: #0d1117;
+    background: var(--bg-color);
     font-size: 14px;
     border-bottom: 0;
 }
@@ -919,15 +920,15 @@ footer {
 }
 
 .file-node-title {
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 .active-tab-files {
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
 }
 
 #typora-sidebar #ty-sidebar-footer {
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
     border-top: 0 solid #090b10;
 }
 
@@ -941,12 +942,12 @@ footer {
 
 .megamenu-menu-list li:not(.saved) a:not(.active):hover,
 .megamenu-menu-list li a.active {
-    background: #161b22 !important;
+    background: var(--item-hover-bg-color) !important;
 }
 
 /*.file-node-content:hover .file-node-icon:hover, .file-node-content:hover {
   visibility: visible;
-  background: #0d1117 !important;
+  background: var(--bg-color) !important;
 }*/
 
 .file-node-open-state {
@@ -954,14 +955,14 @@ footer {
 }
 
 .mac-seamless-mode #typora-sidebar {
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
     border-right: 0 solid #090c12;
     font-weight: 400;
     font-family: Nunito, sans-serif;
 }
 
 titlebar {
-    background-color: #0d1117;
+    background-color: var(--bg-color);
 }
 
 /* Sidebar header on Win/Linux (Files/Plan) */
@@ -972,7 +973,7 @@ titlebar {
 
 /* Plan should get the same sidebar background color on Win/Linux */
 .typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar {
-    background-color: #161b22
+    background-color: var(--item-hover-bg-color)
 }
 
 /* Bottom border on Win/Linux Sidebar */
@@ -985,7 +986,7 @@ titlebar {
 }
 
 .sidebar-tab.active {
-    color: #c9d1d9;
+    color: var(--text-color);
     font-weight: 700;
 }
 
@@ -995,7 +996,7 @@ titlebar {
 }
 
 .fa-file-text-o:before {
-    color: #c9d1d9 !important;
+    color: var(--text-color) !important;
 }
 
 .md-lang {
@@ -1003,7 +1004,7 @@ titlebar {
 }
 
 .html-for-mac .context-menu {
-    --item-hover-bg-color: #0d1117;
+    --item-hover-bg-color: var(--bg-color);
     color: #efb752;
 }
 
@@ -1053,8 +1054,8 @@ input {
 }
 
 .ty-preferences .nav-group-item.active {
-    background: #0d1117;
-    color: #c9d1d9;
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 .cm-s-inner {
@@ -1074,8 +1075,8 @@ input {
 
 .cm-s-inner.CodeMirror,
 .cm-s-inner .CodeMirror-gutters {
-    background-color: #161b22 !important;
-    border: 1px solid #161b22;
+    background-color: var(--item-hover-bg-color) !important;
+    border: 1px solid var(--item-hover-bg-color);
 }
 
 .cm-s-inner .CodeMirror-gutters {
@@ -1123,15 +1124,15 @@ input {
 }
 
 .cm-s-inner span.cm-variable {
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 .cm-s-inner span.cm-variable-2 {
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 .cm-s-inner span.cm-def {
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 .cm-s-inner span.cm-operator {
@@ -1201,7 +1202,7 @@ input {
 }
 
 .cm-s-inner .CodeMirror-matchingbracket {
-    color: #c9d1d9 !important;
+    color: var(--text-color) !important;
     text-decoration: underline;
 }
 
@@ -1220,6 +1221,11 @@ body::-moz-selection {
     padding-left: 2rem;
     font-size: 1.15rem;
     /*  margin: .5rem 0;*/
+}
+
+/* code blocks size inside lists */
+#write li .cm-s-inner {
+    font-size: 1.105rem !important;
 }
 
 #write ol>li,
@@ -1333,12 +1339,12 @@ mark {
 .cm-s-typora-default {
     font-family: "Nunito", sans-serif;
     font-size: 17px;
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 .cm-s-typora-default .cm-header,
 .cm-s-typora-default .cm-property {
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 /*.cm-s-typora-default .cm-header1 {
@@ -1407,9 +1413,9 @@ mark {
 }*/
 
 .cm-s-typora-default pre.cm-s-inner {
-    background-color: #161b22 !important;
-    border: 1px solid #161b22;
-    color: #c9d1d9;
+    background-color: var(--item-hover-bg-color) !important;
+    border: 1px solid var(--item-hover-bg-color);
+    color: var(--text-color);
     font-size: 0.9em;
 }
 
@@ -1418,7 +1424,7 @@ mark {
 }
 
 .CodeMirror-activeline .cm-atom {
-    color: #c9d1d9 !important;
+    color: var(--text-color) !important;
 }
 
 
@@ -1433,7 +1439,7 @@ mark {
 }
 
 /*.CodeMirror-activeline .CodeMirror-activeline-gutter .CodeMirror-gutter-elt {
-  color: #c9d1d9 !important;
+  color: var(--text-color) !important;
 }*/
 
 /* mega menu */
@@ -1450,7 +1456,7 @@ mark {
 }
 
 .megamenu-menu-list {
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
 }
 
 .megamenu-opened .megamenu-content {
@@ -1462,7 +1468,7 @@ mark {
 
 /* mega menu sidebar*/
 .megamenu-menu {
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
 }
 
 /* return button in mega menu */
@@ -1476,12 +1482,12 @@ mark {
 /* return button color in mega menu */
 .megamenu-menu-header #megamenu-menu-header-title,
 .megamenu-menu-header #megamenu-menu-header-title:before {
-    color: #c9d1d9;
+    color: var(--text-color);
 }
 
 .megamenu-menu-list li a:hover,
 .megamenu-menu-list li a.active {
-    background-color: #0d1117;
+    background-color: var(--bg-color);
 }
 
 /* return button hover in mega menu */
@@ -1496,18 +1502,18 @@ mark {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
     margin-bottom: 10px;
     margin-left: 10px;
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
 }
 
 .long-btn:hover {
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
     border-color: 1px solid #8b949e;
-    color: #c9d1d9 !important;
+    color: var(--text-color) !important;
 }
 
 
 #recent-file-panel-action-btn {
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
     border: 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
     margin-bottom: 10px;
@@ -1665,7 +1671,7 @@ text.slice {
 
 /* sidebar in setting */
 .sidebar {
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
 }
 
 .list-group-content {
@@ -1686,21 +1692,21 @@ text.slice {
 .nav-group-item:active,
 .nav-group-item.active {
     background-color: #0d1117 !important;
-    color: #c9d1d9 !important;
+    color: var(--text-color) !important;
 }
 
 /* the indent example in setting.editor */
 div.pane>div:nth-child(4)>div:nth-child(2) .label-input-group td:last-child div {
     border: 1px solid #30363d !important;
     border-radius: 6px;
-    background-color: #21262d;
+    background-color: var(--color-border-secondary);
     margin: 10px !important;
 }
 
 /* button in setting menu */
 .ty-preferences button.btn-default {
     border: 1px solid #30363d;
-    background-color: #21262d;
+    background-color: var(--color-border-secondary);
     border-radius: 6px;
 }
 
@@ -1708,7 +1714,7 @@ div.pane>div:nth-child(4)>div:nth-child(2) .label-input-group td:last-child div 
 .ty-preferences .btn-default:not([disabled]):hover {
     /* background-color: white !important; */
     border-color: #8b949e !important;
-    background-color: #21262d !important;
+    background-color: var(--color-border-secondary) !important;
 }
 
 /* return button in setting menu */
@@ -1740,7 +1746,7 @@ div.pane>div:nth-child(4)>div:nth-child(2) .label-input-group td:last-child div 
 select {
     border: 1px solid #30363d;
     border-radius: 6px;
-    background-color: #21262d !important;
+    background-color: var(--color-border-secondary) !important;
     padding-top: 5px !important;
     padding-bottom: 5px !important;
 }
@@ -1761,7 +1767,7 @@ select[disabled]:hover {
 /* radio */
 
 input[type="radio"] {
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
     border: 0px !important;
 }
 
@@ -1774,7 +1780,7 @@ input[type="radio"]:before {
     text-align: center;
     border: 1px solid #30363d;
     border-radius: 0.55rem;
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
     margin-top: -0.5rem;
     margin-left: -0.1rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -1794,7 +1800,7 @@ input[type="radio"]:checked:before {
     font-size: 1rem;
     line-height: 1rem;
     color: var(--text-color);
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
 }
 
 
@@ -1805,7 +1811,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 input {
-    background-color: #161b22 !important;
+    background-color: var(--item-hover-bg-color) !important;
     border: 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -1824,7 +1830,7 @@ input[type="checkbox"]:before {
     text-align: center;
     border: 1px solid #30363d;
     border-radius: 3px;
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
     margin-top: -0.5rem;
     margin-left: -0.1rem;
 }
@@ -1866,7 +1872,7 @@ input[type="checkbox"]:checked:hover:before {
 input:not([type="range"]):not([type="color"]) {
     border: 1px solid #30363d !important;
     border-radius: 3px;
-    background-color: #161b22;
+    background-color: var(--item-hover-bg-color);
 }
 
 .pane-sm input[type="search"] {
@@ -2048,7 +2054,7 @@ div.cm-s-inner[lang="ruby"] .cm-atom {
 }
 
 .typora-export .footnote-line {
-    color: #c9d1d9;
+    color: var(--text-color);
     font-size: 15px !important;
 }
 

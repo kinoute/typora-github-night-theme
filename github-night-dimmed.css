@@ -1,0 +1,104 @@
+@import 'github-night.css';
+
+:root {
+    --text-color: #adbac7;
+    --bg-color: #22272e;
+    --side-bar-bg-color: #22272e;
+    --control-text-color: #a9aaab;
+    --primary-color: #f9826c;
+    --primary-btn-border-color: #f9826c;
+    --active-file-text-color: inherit;
+    --active-file-border-color: #f9826c;
+    --active-file-bg-color: #22272e;
+    --primary-btn-text-color: #f9826c;
+    --window-border: 0 solid #22272e;
+    --item-hover-bg-color: #2d333b;
+    --item-hover-text-color: #f9826c;
+    --meta-content-color: #f9826c;
+    --search-select-text-color: #f9826c;
+    --control-text-color: var(--text-color);
+    --control-text-hover-color: var(--text-color);
+    --heading-char-color: #f9826c;
+    --active-toggle-btn-color: #192133;
+    --blur-text-color: rgba(200, 200, 200, 0.33);
+    --rawblock-edit-panel-bd: #2d333b !important;
+    --select-text-bg-color: rgba(53, 82, 116, 0.97) !important;
+    --select-text-font-color: #fff !important;
+    --color-border-secondary: #373e47 !important;
+    /* Mermaid diagrams*/
+    --mermaid-node-color: #b87f62 !important;
+    --mermaid-node-border: #bd7958;
+    --mermaid-contrast-color: #afe61d;
+    --mermaid-theme: dark;
+    --monospace: "SFMono-Regular";
+}
+
+
+/*.cm-s-inner span.cm-comment {
+    color: #bdc4cc;
+    font-style: normal;
+}
+
+.cm-s-typora-default .cm-comment {
+    color: #bdc4cc;
+}*/
+
+blockquote {
+    border-left-width: 4px !important;
+    border-left: .25em solid #444c56 !important;
+    padding: 0 1em;
+}
+
+blockquote p {
+    color:  #768390 !important;
+}
+
+hr {
+    background-color:  #7a828e !important;
+}
+
+#write ol>li, #write ul>li {
+    font-size:  1.2rem !important;
+    font-weight: normal !important;
+}
+
+
+.ty-preferences button.btn-default {
+    background-color:  var(--item-hover-bg-color) !important;
+}
+
+/* button hover in setting menu */
+.ty-preferences .btn-default:not([disabled]):hover {
+    border-color: #8b949e !important;
+    background-color: var(--item-hover-bg-color) !important;
+}
+
+/* sidebar button hover in setting menu */
+.nav-group-item:hover,
+.nav-group-item:active,
+.nav-group-item.active {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* select item (mostly in setting menu) */
+select {
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: var(--item-hover-bg-color) !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+/* enabled select item hover */
+select:not([disabled]):hover {
+    color: var(--text-color);
+    opacity: 1;
+    border: 1px solid #8b949e;
+}
+
+/* disabled select item hover */
+select[disabled]:hover {
+    opacity: 0.5;
+    border: 1px solid #8b949e;
+}
